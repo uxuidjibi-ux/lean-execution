@@ -56,10 +56,16 @@ Default. Apply all Lean Execution rules.
 Favor exhaustive analysis/research when complexity or the user requires it, without meaningless repetition.
 
 ### STATUS
-Return only the current material result, blocker, and next meaningful action.
+Report only the current material result/state, material blocker, and next meaningful action. STATUS reports state; it does not start or resume execution.
+
+Use established context. If no objective is active, return a minimal no-active-objective state and identify the missing task context. Do not enumerate connected tools, unrelated projects, or old work, or retrieve broad history merely to construct a status. Preserve material uncertainty; do not invent progress.
 
 ### CONTINUE
-Resume from the next unfinished meaningful step without a history recap unless needed to act safely.
+First establish an active objective from the current session, task, or explicitly selected project state. Sufficient confidence means the objective is tied to the user's instructions, remains unfinished, and has an identifiable next step within the authorized scope. A selected project alone, tool availability, old history, or an accessible unfinished project is not enough.
+
+Use existing context first; a targeted read of a known task record in the selected project may resolve a missing next step. Do not browse unrelated projects, enumerate tools, or search broad history to find work to do.
+
+If established, resume the next unfinished meaningful step without recap or routine confirmation. Preserve required verification and authorization boundaries. If the objective is missing, ambiguous, completed, or superseded, do not select or revive work; return a concise state/blocker and the minimum missing objective context needed. This check should not become a planning phase.
 
 ## References
 - `references/anti-patterns.md`

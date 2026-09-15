@@ -1,5 +1,13 @@
 # Next Steps — Codex Handoff
 
+## Current continuation checkpoint — V0.1.1 candidate
+
+Prepared on `fix/v0.1.1-command-scope`: core command contracts, aligned Claude adapter, examples, `evals/command-regressions.md`, and `packages/lean-execution-0.1.1.zip`.
+
+Next unfinished action: run the candidate command suite in Claude, capture transcripts/tool traces and per-assertion results, and append evidence to `TEST-LOG.md`. No Claude behavioral runs were performed during candidate preparation. The environment used for preparation had no callable Claude evaluation runtime. Keep the PR in draft until the behavioral quality gate is met; fix any observed regressions within this scope before preparing release. Static checks alone do not establish a behavioral fix.
+
+The first-task specification below is retained as the acceptance contract, not an instruction to redo completed edits.
+
 ## Immediate objective
 
 Continue Lean Execution as a standalone open-source repository. Do not import unrelated CaurisPlatform context.

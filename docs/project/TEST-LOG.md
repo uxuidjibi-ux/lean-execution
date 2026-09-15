@@ -57,3 +57,36 @@ Token count alone is not success.
 7. CONTINUE with active objective.
 8. CONTINUE without active objective.
 9. DEEP to ensure necessary detail is not over-compressed.
+
+## T-004 — V0.1.1 candidate source/package verification
+
+**Date:** 2026-09-15
+
+**Environment:** local Python 3.13; source based on `8ee8b74`; branch `fix/v0.1.1-command-scope`.
+
+**Scope:** static candidate verification only, not a Claude or baseline-vs-Lean behavioral run.
+
+**Checks performed:**
+- Skill frontmatter/name/scaffold validator: PASS after installing PyYAML 6.0.3 in a temporary validation directory (both initially available Python environments lacked it).
+- `git diff --check`: PASS.
+- Repository Markdown navigation targets: PASS; illustrative fixture links are excluded.
+- Archive integrity, exact three-file allowlist, and byte-for-byte parity with the skill sources: PASS.
+- Rebuild from `packages/README.md`: byte-identical PASS.
+- Comparison with base: core invariants, execution/verification rules, LEAN/DEEP, and quality-boundary reference unchanged: PASS.
+- Manual contract review: T-002 maps to CMD-01/04; T-003 maps to CMD-02/03. CMD-05/06 preserve authorized continuation and targeted recovery; CMD-07–11 cover ambiguity, completion, supersession, unavailable access, and failed verification.
+
+**Package:** `packages/lean-execution-0.1.1.zip`
+
+**SHA-256:** `a5e0a4b3f8c9991c0418d67621db47a71998b0633a074378dda32eebc15c4701`
+
+**Result:** source/package checks PASS. Behavioral fix NOT YET VERIFIED.
+
+## T-005 — V0.1.1 Claude command retest
+
+**Status:** NOT RUN — no callable Claude evaluation runtime was available in the preparation environment.
+
+**Cases:** CMD-01 through CMD-11 in `evals/command-regressions.md`, three repetitions per baseline/candidate configuration. The fresh STATUS → CONTINUE sequence explicitly reproduces the observed scope-selection risk.
+
+**Required evidence:** model/runtime and settings, candidate revision/hash, installation outcome, transcripts, tool traces, fixture snapshots, per-assertion results, and token counts where exposed. No quantitative savings claim is made.
+
+**Next:** install the candidate in a controlled Claude test environment, run the suite, record failures as well as successes, and only then assess readiness for release and subsequent Codex work.

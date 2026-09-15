@@ -1,5 +1,9 @@
 # Lean Execution — Project Handoff
 
+## V0.1.1 candidate update — 2026-09-15
+
+The command-contract changes, 11 regression cases, good/bad examples, and reproducible Claude ZIP are prepared on `fix/v0.1.1-command-scope`. V0.1 observations below remain historical evidence, not V0.1.1 results. Source/package checks are recorded in `TEST-LOG.md`; Claude behavioral retests remain pending. Follow the current continuation checkpoint in `NEXT-STEPS-CODEX.md`. Do not start the Codex adapter before the Claude/core validation gate.
+
 ## Purpose
 
 Lean Execution is an open-source, model-agnostic agent execution skill/method designed to maximize **useful work per token** without sacrificing correctness, verification, safety, or user intent.
