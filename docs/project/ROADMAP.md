@@ -11,14 +11,14 @@
 - Public GitHub repository.
 - Global Claude installation tested.
 
-## V0.1.1 — Tighten Claude behavior
-- Strengthen STATUS output contract.
-- Add active-objective confidence rule for CONTINUE.
-- Reduce blocker verbosity.
-- Add explicit “do not enumerate unrelated projects/tools” rule.
-- Add examples of good/bad STATUS and CONTINUE behavior.
-- Repackage Claude skill.
-- Retest.
+## V0.1.1 — Candidate prepared; Claude retest pending
+- [x] Strengthen STATUS output contract.
+- [x] Add active-objective confidence rule for CONTINUE.
+- [x] Specify concise blockers; behavioral confirmation pending.
+- [x] Add explicit “do not enumerate unrelated projects/tools” rule.
+- [x] Add examples of good/bad STATUS and CONTINUE behavior.
+- [x] Repackage Claude skill as an unreleased V0.1.1 candidate.
+- [ ] Run Claude command regressions and record transcripts before release.
 
 ## V0.2 — Evaluation
 - Build reproducible baseline-vs-Lean test set.

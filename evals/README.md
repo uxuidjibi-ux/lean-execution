@@ -15,3 +15,7 @@ Initial task families:
 3. Product/UX flow change
 4. Evidence-based research question
 5. Multi-step continuation task
+
+## Command regressions
+
+Run [the V0.1.1 command suite](command-regressions.md) for STATUS/CONTINUE changes. It includes fresh-session, active-objective, targeted recovery, ambiguous, completed, superseded, and blocked-task scenarios. Record actual transcripts separately from illustrative examples and static checks.

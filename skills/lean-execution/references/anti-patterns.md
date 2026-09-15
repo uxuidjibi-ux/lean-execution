@@ -7,6 +7,8 @@
 - **RE-INSPECTION** — inspecting already verified work without new evidence.
 - **MICRO-CONFIRMATION** — asking permission for routine, reversible actions.
 - **SCOPE DRIFT** — unrelated cleanup while the primary objective remains unfinished.
+- **OBJECTIVE INVENTION** — treating accessible projects, tools, or old work as authorization to choose an objective on CONTINUE.
+- **STATUS DISCOVERY** — enumerating unrelated projects/tools or retrieving broad history to manufacture a status.
 - **TOOL NARRATION** — reporting every search, read, command, or tool call.
 - **VERBOSE SUCCESS** — long explanations after straightforward success.
 - **REDUNDANT OUTPUT** — reproducing information already visible.

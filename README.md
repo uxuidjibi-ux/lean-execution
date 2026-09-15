@@ -4,7 +4,7 @@
 
 Lean Execution is an open-source, model-agnostic agent execution method designed to maximize **useful work per token** without sacrificing correctness, verification, safety, or user intent.
 
-**Status:** v0.1 draft — Claude-first validation.
+**Status:** v0.1.1 candidate — command contracts tightened; Claude behavioral retest pending.
 
 ## Core loop
 `UNDERSTAND → INSPECT → EXECUTE → VERIFY → RECORD → CONTINUE`
@@ -21,7 +21,7 @@ Lean Execution is an open-source, model-agnostic agent execution method designed
 - `LEAN` — default.
 - `DEEP` — exhaustive analysis/research when justified.
 - `STATUS` — result, material blocker, next meaningful action only.
-- `CONTINUE` — resume from the next unfinished meaningful step.
+- `CONTINUE` — resume an established active objective at its next unfinished meaningful step.
 
 ## Architecture
 The core is model-independent. Model-specific behavior lives in adapters.
@@ -39,3 +39,9 @@ No quantitative token-saving claim should be published until reproducible evalua
 3. Evaluation suite
 4. Public V0.1 release
 5. Codex adapter
+
+## V0.1.1 validation
+- [Command examples](examples/commands.md)
+- [Command regression suite](evals/command-regressions.md)
+- [Claude candidate package](packages/README.md)
+- [Project roadmap](docs/project/ROADMAP.md)
