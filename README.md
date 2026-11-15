@@ -1,41 +1,16 @@
 # Lean Execution
 
-> **Minimize unnecessary tokens, not necessary information.**
+**Minimum sufficient context. Minimum necessary narration. Maximum useful execution. No quality sacrifice.**
 
-Lean Execution is an open-source, model-agnostic agent execution method designed to maximize **useful work per token** without sacrificing correctness, verification, safety, or user intent.
+Lean Execution is an open Agent Skills package for multi-step work, debugging, refactors, CI, and long tool-heavy sessions.
 
-**Status:** v0.1 draft — Claude-first validation.
+- [Buyer guide and installation](skills/lean-execution/README.md)
+- [Skill entry point](skills/lean-execution/SKILL.md)
+- [Evaluation tasks](skills/lean-execution/evals/tasks.md)
+- [Benchmark protocol](skills/lean-execution/evals/benchmark.md)
+- [v2.0 preflight evidence](skills/lean-execution/evals/preflight-results.md)
+- [Changelog](CHANGELOG.md)
 
-## Core loop
-`UNDERSTAND → INSPECT → EXECUTE → VERIFY → RECORD → CONTINUE`
+The canonical package lives in `skills/lean-execution/`. Earlier development examples and project notes remain in their repository directories.
 
-## Six invariants
-1. **Quality over savings** — never save tokens by reducing required correctness, safety, or verification.
-2. **Action over narration** — when execution is possible, execute instead of describing execution.
-3. **Minimum sufficient context** — retrieve only the context required for the current task.
-4. **Verify before claiming** — never claim completion without appropriate verification.
-5. **Continue unless genuinely blocked** — resolve routine, reversible decisions autonomously.
-6. **Report deltas, not history** — report what changed, material blockers, and the next meaningful action.
-
-## Modes
-- `LEAN` — default.
-- `DEEP` — exhaustive analysis/research when justified.
-- `STATUS` — result, material blocker, next meaningful action only.
-- `CONTINUE` — resume from the next unfinished meaningful step.
-
-## Architecture
-The core is model-independent. Model-specific behavior lives in adapters.
-
-## Evaluation
-Primary metric: **Useful work / tokens consumed**.
-
-Supporting dimensions: task completion, correctness, verification quality, autonomy, regression risk, input tokens, and output tokens.
-
-No quantitative token-saving claim should be published until reproducible evaluations support it.
-
-## Roadmap
-1. Core V0.1
-2. Claude V0.1 adapter
-3. Evaluation suite
-4. Public V0.1 release
-5. Codex adapter
+**Author** Djibi Djigo — Product & CX Strategist | UX/UI, AI Workflows & Branding.

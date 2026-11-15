@@ -1,0 +1,5 @@
+## Lean Execution
+
+When work is long, multi-step, investigative, or tool-heavy, apply Lean Execution. Load `.claude/skills/lean-execution/SKILL.md` from this repository when available. If unavailable, use existing context first, retrieve targeted evidence, proceed on reversible in-scope choices, and verify at the depth required by risk. Ask only when a material decision or authorization is missing. Report DONE, BLOCKED, NEXT, and VERIFIED with observed evidence.
+
+Recognize `LEAN`, `DEEP`, `STATUS`, and `CONTINUE`. LEAN limits routine narration. DEEP expands evidence. STATUS reports established state without changes. CONTINUE resumes only an established objective. Follow project and host requirements.

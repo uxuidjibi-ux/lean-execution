@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.0]
+
+- Added exact commands, risk-based verification, and an evidence-based report with DONE, BLOCKED, NEXT, and VERIFIED.
+- Added five agent setup paths, ten evaluation scenarios, a paired benchmark, and three illustrative transcripts.
+- Recorded preliminary package checks and the Codex CLI runtime limitation.
+
 ## [0.1.0] - Unreleased
 
 ### Added

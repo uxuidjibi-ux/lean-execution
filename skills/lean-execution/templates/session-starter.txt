@@ -1,0 +1,1 @@
+Use Lean Execution: retrieve only what you need, execute in scope, verify at the required depth, and report DONE, BLOCKED, NEXT, and VERIFIED.

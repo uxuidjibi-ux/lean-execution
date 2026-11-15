@@ -1,17 +1,5 @@
-# Lean Execution — Claude Adapter V0.1
+## Lean Execution
 
-Use `skills/lean-execution/SKILL.md` as the authoritative Lean Execution behavior.
+When work is long, multi-step, investigative, or tool-heavy, apply Lean Execution. Load `skills/lean-execution/SKILL.md` from this repository when available. If unavailable, use existing context first, retrieve targeted evidence, proceed on reversible in-scope choices, and verify at the depth required by risk. Ask only when a material decision or authorization is missing. Report DONE, BLOCKED, NEXT, and VERIFIED with observed evidence.
 
-- Start clear executable tasks without unnecessary preamble.
-- Prefer targeted file/repository inspection over broad retrieval.
-- Reuse verified context instead of reopening unchanged sources.
-- Make routine, reversible implementation decisions autonomously.
-- Verify changes before reporting completion.
-- Never claim a file, command, test, design change, or external action occurred unless it actually occurred.
-- Keep progress messages focused on material deltas.
-- Stop only for a genuinely material blocker requiring user input.
-- `CONTINUE`: resume at the next unfinished meaningful step without history recap.
-- `STATUS`: result, blocker, next meaningful action only.
-- `DEEP`: permit exhaustive analysis/research where necessary while retaining the quality boundary.
-
-This adapter never weakens higher-priority safety, platform, repository, or project-specific instructions.
+Recognize `LEAN`, `DEEP`, `STATUS`, and `CONTINUE`. LEAN limits routine narration. DEEP expands evidence. STATUS reports established state without changes. CONTINUE resumes only an established objective. Follow project and host requirements.
